@@ -36,13 +36,3 @@ Upgrade notes
 ```
 
 Link to GitHub's comparison between tags for anyone who wants the full code diff. Verify release archives and their checksums before publishing. Do not promise automatic updates until a tested and verified updater exists.
-
-## GitHub Wiki
-
-`wiki/` in the main repository is the documentation source. After creating the GitHub repository, enable Wiki and create the first `Home` page there. Then publish updates with:
-
-```bash
-./scripts/publish-wiki.sh git@github.com:h0ek/quirea.wiki.git
-```
-
-The script mirrors local `wiki/` to GitHub Wiki, including deleting pages that no longer exist locally. Edit local sources first; do not keep unique manual pages only on GitHub Wiki.
