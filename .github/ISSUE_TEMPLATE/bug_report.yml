@@ -1,0 +1,33 @@
+name: Bug report
+description: Something in Quirea is not working
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "For security vulnerabilities, use the private report option under the repository's Security tab. Do not post secrets or private feed URLs."
+  - type: input
+    id: version
+    attributes:
+      label: Quirea version
+      placeholder: 0.1.0-dev
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+      description: Include what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and logs
+      description: OS, nginx, PostgreSQL, browser (when relevant). Remove credentials, tokens, cookies and private URLs.
